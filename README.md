@@ -7,3 +7,7 @@ To run:
 3) Run: cp config.default.php config.php
 4) Replace the data in config.php with your Facebook info
 5) Run: php main.php
+
+
+Notes:
+-> I ran into trouble with the Guzzle client Facebook uses. "sudo apt-get install php-curl" helped
