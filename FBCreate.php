@@ -4,15 +4,15 @@ require __DIR__ . '/vendor/autoload.php';
 class FBCreate {
   private $config;
   private $appsecret_proof;
-  private $fb;
+  private $facebook;
 
   function __construct($config) {
     $this->config = $config;
   }
 
   function getFB() {
-    if(is_null($this->fb)) {
-      $this->fb = new \Facebook\Facebook([
+    if(is_null($this->facebook)) {
+      $this->facebook = new \Facebook\Facebook([
         'app_id' => $this->config['app_id'],
         'app_secret' => $this->config['app_secret'],
         'default_graph_version' => $this->config['default_graph_version'],
@@ -22,7 +22,7 @@ class FBCreate {
       ]);
     }
 
-    return $this->fb;
+    return $this->facebook;
   }
 
   private function get_appsecret_proof() {
