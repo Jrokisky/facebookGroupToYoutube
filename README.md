@@ -11,3 +11,4 @@ To run:
 
 Notes:
 -> I ran into trouble with the Guzzle client Facebook uses. "sudo apt-get install php-curl" helped
+-> A good place for the Facebook config stuff: https://developers.facebook.com/tools/explorer/
